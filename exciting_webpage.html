@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exciting Webpage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #ff7e5f;
+            font-family: 'Georgia', serif;
+            font-size: 1.8em;
+        }
+        ul, ol {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ff7e5f;
+            color: white;
+            font-weight: bold;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            background: #ff7e5f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #feb47b;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            font-family: 'Verdana', sans-serif;
+        }
+        .highlight {
+            color: #ff4500;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to My Exciting Webpage!</header>
+
+    <section id="lists">
+        <h2>Fun Lists</h2>
+        <p>Here are some <span class="highlight">unordered</span> and ordered lists to showcase items:</p>
+        <ul>
+            <li>Adventure Sports</li>
+            <li>Cooking Recipes</li>
+            <li>Travel Destinations</li>
+        </ul>
+        <ol>
+            <li>Plan your trip</li>
+            <li>Pack your bags</li>
+            <li>Enjoy the journey!</li>
+        </ol>
+    </section>
+
+    <section id="table">
+        <h2>Amazing Table</h2>
+        <p>Check out this table with some cool data:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gadget</td>
+                    <td>A high-tech device</td>
+                    <td>$99.99</td>
+                </tr>
+                <tr>
+                    <td>Book</td>
+                    <td>An inspiring novel</td>
+                    <td>$19.99</td>
+                </tr>
+                <tr>
+                    <td>Toy</td>
+                    <td>Fun for all ages</td>
+                    <td>$14.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Contact Form</h2>
+        <p>Fill out this form to get in touch!</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="general">General</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="text">
+        <h2>Exciting Text</h2>
+        <p>This is a paragraph with some <strong>bold text</strong> and <em>italic text</em> to make it more engaging. We can play with fonts to create visual interest!</p>
+        <p style="font-family: 'Courier New', monospace; font-size: 1.2em;">This text uses a monospace font for a different look.</p>
+        <p class="highlight">Highlight this important information!</p>
+    </section>
+</body>
+</html>
