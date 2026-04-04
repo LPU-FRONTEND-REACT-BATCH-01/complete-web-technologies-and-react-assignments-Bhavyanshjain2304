@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo-Elements</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .quote::before {
+            content: "❝ ";
+            color: blue;
+        }
+
+        .quote::after {
+            content: " ❞";
+            color: blue;
+        }
+
+        a.external::after {
+            content: " 🔗";
+        }
+
+      
+        .price::before {
+            content: "$ ";
+            color: green;
+        }
+
+        .hover-btn {
+            cursor: pointer;
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .hover-btn::before {
+            content: "► ";
+        }
+
+        .hover-btn:hover::before {
+            content: "►► ";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>::before and ::after Pseudo-Elements</h1>
+
+    <h2>Example 1: Quotes</h2>
+    <p class="quote">This is a quote</p>
+    <p class="quote">Another quote</p>
+
+
+    <h2>Example 2: Links with Icons</h2>
+    <a href="https://google.com" class="external">Google</a><br>
+    <a href="https://github.com" class="external">GitHub</a>
+
+  
+
+    <h2>Example 3: Prices</h2>
+    <p class="price">99.99</p>
+    <p class="price">49.99</p>
+
+    <h2>Example 4: Hover Effect</h2>
+    <button class="hover-btn">Click Me</button>
+
+</body>
+</html>
