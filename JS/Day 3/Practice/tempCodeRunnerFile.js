@@ -1,0 +1,2 @@
+let arr = [1,34,2334,12,12,3]
+// let duplicate = [...arr]
