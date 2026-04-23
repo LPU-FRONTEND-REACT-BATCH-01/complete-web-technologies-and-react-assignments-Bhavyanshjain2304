@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "react-router-dom": "^7.14.1",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}

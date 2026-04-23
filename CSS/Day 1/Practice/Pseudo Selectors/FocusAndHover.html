@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus and Hover Pseudo Selectors</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        /* Links - Hover Effect */
+        a {
+            color: blue;
+            text-decoration: none;
+            margin: 10px 0;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        a:hover {
+            color: white;
+            background-color: blue;
+            text-decoration: underline;
+        }
+
+        /* Buttons - Hover and Focus */
+        button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            font-size: 14px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #333;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        button:focus {
+            outline: 3px solid green;
+            outline-offset: 2px;
+        }
+
+        /* Input Fields - Focus Effect */
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            display: block;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid blue;
+            background-color: lightyellow;
+            box-shadow: 0 0 5px blue;
+        }
+
+        input:hover {
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Focus and Hover Pseudo Selectors</h1>
+
+    <h2>Links with Hover</h2>
+    <a href="https://amazon.com">Amazon</a>
+    <a href="https://google.com">Google</a>
+    <a href="https://github.com">GitHub</a>
+
+    <h2>Buttons with Hover and Focus</h2>
+    <button>Click Me</button>
+    <button>Submit</button>
+    <button>Cancel</button>
+
+    <h2>Input Fields with Focus</h2>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name">
+    
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email">
+    
+    <label>Password:</label>
+    <input type="password" placeholder="Enter password">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
